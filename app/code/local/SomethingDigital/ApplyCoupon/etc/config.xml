@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SomethingDigital_ApplyCoupon>
+            <version>0.1.0</version>
+        </SomethingDigital_ApplyCoupon>
+    </modules>
+    <global>
+        <models>
+            <somethingdigital_applycoupon>
+                <class>SomethingDigital_ApplyCoupon_Model</class>
+            </somethingdigital_applycoupon>
+        </models>
+        <helpers>
+            <applycoupon>
+                <class>SomethingDigital_ApplyCoupon_Helper</class>
+            </applycoupon>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <somethingdigital_applycoupon>
+                        <class>somethingdigital_applycoupon/observer</class>
+                        <method>applyCoupon</method>
+                    </somethingdigital_applycoupon>
+                </observers>
+            </checkout_cart_product_add_after>
+            <controller_action_predispatch_checkout_cart_index>
+                <observers>
+                    <somethingdigital_applycoupon>
+                        <class>somethingdigital_applycoupon/observer</class>
+                        <method>applyCoupon</method>
+                    </somethingdigital_applycoupon>
+                </observers>
+            </controller_action_predispatch_checkout_cart_index>
+        </events>
+        <layout>
+            <updates>
+                <sd_applycoupon module="SomethingDigital_ApplyCoupon">
+                    <file>sd_applycoupon.xml</file>
+                </sd_applycoupon>
+            </updates>
+        </layout>
+    </frontend>
+</config>

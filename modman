@@ -1,0 +1,5 @@
+# SomethingDigital_ApplyCoupon
+app/code/community/SomethingDigital/ApplyCoupon
+app/design/frontend/base/default/layout/sd_applycoupon.xml
+skin/frontend/base/default/js/applycoupon.js
+app/etc/modules/SomethingDigital_ApplyCoupon.xml

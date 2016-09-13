@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+  <acl>
+    <resources>
+      <all>
+        <title>Allow Everything</title>
+      </all>
+      <admin>
+        <children>
+          <system>
+            <children>
+              <config>
+                <children>
+                  <somethingdigital_applycoupon translate="title" module="fraudalert">
+                    <title>Auto Apply Coupon Code Settings.</title>
+                  </somethingdigital_applycoupon>
+                </children>
+              </config>
+            </children>
+          </system>
+        </children>
+      </admin>
+    </resources>
+  </acl>
+</config>

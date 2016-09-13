@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <SomethingDigital_ApplyCoupon>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SomethingDigital_ApplyCoupon>
+    </modules>
+</config>
