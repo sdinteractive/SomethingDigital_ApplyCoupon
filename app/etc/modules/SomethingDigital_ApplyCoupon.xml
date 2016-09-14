@@ -2,7 +2,7 @@
     <modules>
         <SomethingDigital_ApplyCoupon>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </SomethingDigital_ApplyCoupon>
     </modules>
 </config>
